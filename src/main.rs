@@ -5,15 +5,46 @@ fn main() {
     //     x = x + 100;
     // }
     // println!("Final x = {}", x);
+let greeting: String = String::from("hello world");
 
-    let greeting :String = String::from("hello world");
+    println!("{}", greeting);
 
-    println!("{}",greeting);
+    let ch: Option<char> = greeting.chars().nth(0);
+
+    match ch {
+        Some(c) => print!("{}", c),
+        None => print!("no character found at index"),
+    }
 }
-
 // cargo init to intialize a rust project
 // cargo run to run it 
 
 
 // string in rust does not have fixed type
 // string can change spadce in runtime 
+
+
+
+// &str (string slice)
+
+// A reference to a string slice (borrowed string).
+
+// Immutable by default.
+
+// Usually points to a fixed string in memory (e.g., string literals) or a part of another string.
+
+// Stored on the stack as a pointer + length, but the actual string data can live elsewhere (like in the program’s binary for literals).
+
+// Lightweight and faster when you don’t need ownership.
+
+// String
+
+// An owned, growable string type.
+
+// Heap-allocated (can store dynamic content at runtime).
+
+// Mutable (you can push, insert, or change contents).
+
+// Stores data as a UTF-8 encoded sequence.
+
+// When you need to own the string and modify it, use String.
