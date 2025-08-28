@@ -1,1 +1,1 @@
-C:\Users\goyal\OneDrive\Desktop\rust\target\debug\rust.exe: C:\Users\goyal\OneDrive\Desktop\rust\src\main.rs
+/Users/denishgoyal/Desktop/project/rust-basics/target/debug/rust: /Users/denishgoyal/Desktop/project/rust-basics/src/main.rs

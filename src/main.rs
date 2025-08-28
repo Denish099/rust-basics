@@ -1,21 +1,21 @@
 
-fn main() {
+// fn main() {
     // let mut x: i8 = 2;  // make x mutable and use bigger type
     // for i in 1..1000 {
     //     x = x + 100;
     // }
     // println!("Final x = {}", x);
-let greeting: String = String::from("hello world");
+// let greeting: String = String::from("hello world");
 
-    println!("{}", greeting);
+//     println!("{}", greeting);
 
-    let ch: Option<char> = greeting.chars().nth(0);
+//     let ch = greeting.chars().nth(0);
 
-    match ch {
-        Some(c) => print!("{}", c),
-        None => print!("no character found at index"),
-    }
-}
+//     match ch {
+//         Some(c) => print!("{}", c),
+//         None => print!("no character found at index"),
+//     }
+// }
 // cargo init to intialize a rust project
 // cargo run to run it 
 
@@ -48,3 +48,17 @@ let greeting: String = String::from("hello world");
 // Stores data as a UTF-8 encoded sequence.
 
 // When you need to own the string and modify it, use String.
+
+
+// irresplective of string number all data types in rust are immutable
+// to make it mutable use mut after let 
+
+
+fn main(){
+    let s = String::from("hello");
+    let s2 = String::from("world");
+
+    let combined = format!("{} {}",s,s2);
+
+    print!("{}",combined);
+}
