@@ -60,5 +60,5 @@ fn main(){
 
     let combined = format!("{} {}",s,s2);
 
-    print!("{}",combined);
+    print!("{} {} {:p}",s2.len(),s2.capacity(),s2.as_ptr());
 }
