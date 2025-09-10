@@ -60,11 +60,76 @@
 
 // fn main(){
 //     let s1= String::from("hello");
-//     takeownership(s1.clone());
+//     takeownership(s1);
 
-//     print!("{}",s1);
+//     print!("{}",s1.clone());
 // }
 
 // fn takeownership(some_string:String){
 //     print!("{}",some_string);
+// }
+
+// fn main(){
+
+//     let s1:String = String::from("hello");
+//     let s2 = &s1;
+
+//     print!("{}",s1);
+//     print!("{}",s2);
+
+
+// }
+
+// fn main(){
+//     let s1:String = String ::from("hello");
+
+//     change_ownership(&s1);
+//     print!("{}",s1);
+
+// }
+
+// fn change_ownership(some_string:&String){
+//     println!("{}",some_string);  // this string is borrowed no ownership is changed 
+// }
+
+
+// fn main() {
+//     let mut s1: String = String::from("hello");
+//     update_word(&mut s1);
+//     println!("{}", s1);
+// }
+
+// fn update_word(word: &mut String) {
+//     word.push_str(" world");
+// }
+
+
+//if something is borrowed mutably it can not be borrowed again
+
+
+
+//lifetimes
+//string slices
+ 
+
+// struct reactangle{
+//     width:u32,
+//     height:u32
+// }
+
+// impl reactangle {
+//     fn area(&self)-> u32{
+//         self.width * self.height
+//     }
+    
+// }
+
+// fn main(){
+//     let react = reactangle{
+//         width:10,
+//         height:19
+//     };
+
+//     print!("{}",react.area());
+
 // }
